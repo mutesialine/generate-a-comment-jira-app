@@ -1,0 +1,16 @@
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work 
+modules:
+  trigger:
+    - key: comment-issue-app-hello-world
+      function: main
+      events:
+        - avi:jira:created:issue
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/fbdaab0e-b6c2-4a92-af44-5f0622f5af98
+
