@@ -1,3 +1,3 @@
 export async function run(event, context) {
-	console.log('Hello friends!');
+	console.log('Hello !');
 }
